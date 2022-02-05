@@ -82,7 +82,7 @@
       <plugin>
 				<groupId>org.apache.maven.plugins</groupId> 
 				<artifactId>maven-dependency-plugin</artifactId>
-                    <executions>
+          <executions>
 					  <execution>
 						<phase>package</phase> 
 						<goals><goal>copy</goal></goals>
@@ -96,32 +96,27 @@
 								</artifactItem>
 							</artifactItems>
 						</configuration>
-					</execution>
-				</executions>
+					  </execution>
+				  </executions>
 			</plugin>
 		</plugins>
 	</build>
-
 	<repositories>
     <repository>
         <id>spring-releases</id>
         <url>https://repo.spring.io/libs-release</url>
     </repository>
-
 		<repository>
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
 	</repositories>
-
-
 <pluginRepositories>
     <pluginRepository>
-        <id>spring-releases</id>
-        <url>https://repo.spring.io/libs-release</url>
+      <id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
     </pluginRepository>
 </pluginRepositories>
-
-
 </project>
