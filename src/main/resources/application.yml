@@ -25,6 +25,8 @@ spring:
     name: eurekaserver
 
 eureka:
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
