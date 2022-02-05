@@ -15,7 +15,7 @@
 #  password: ${EUREKA_USER_PASSWORD:password}
 
 server:
-  port: 443
+  port: $PORT
 security:
   user:
     password: ${eureka.password:password}
