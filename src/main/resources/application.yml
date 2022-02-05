@@ -25,6 +25,6 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:443/eureka
+      defaultZone: https://optux.herokuapp.com:443/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0
