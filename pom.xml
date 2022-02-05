@@ -6,7 +6,7 @@
   <groupId>com.heroku</groupId>
   <artifactId>eureka-server-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>Eureka Server</name>
   <description>Eureka Server demo project</description>
@@ -37,7 +37,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <start-class>eurekademo.EurekaServer</start-class>
-    <java.version>1.7</java.version>
+    <java.version>1.8</java.version>
   </properties>
 
   <build>
