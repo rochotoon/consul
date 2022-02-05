@@ -6,7 +6,7 @@
   <groupId>com.heroku</groupId>
   <artifactId>eureka-server-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>Eureka Server</name>
   <description>Eureka Server demo project</description>
