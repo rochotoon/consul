@@ -24,9 +24,6 @@ spring:
   application:
     name: eurekaserver
 
-server:
-  port: 443
-
 eureka:
   client:
     registerWithEureka: false
