@@ -75,7 +75,7 @@
           <appName>${heroku.appName}</appName>
           <includeTarget>false</includeTarget>
           <includes>
-            <include>target/${project.build.finalName}.war</include>
+            <include>target/${project.build.finalName}.jar</include>
           </includes>
         </configuration>
       </plugin>
