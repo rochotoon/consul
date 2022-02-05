@@ -1,21 +1,30 @@
+#server:
+#  port: 443
+#spring:
+#  application:
+#    name: optix
+
+#eureka:
+#  instance:
+#    hostname: optux.herokuapp.com
+#  client:
+#    fetch-registry: false
+#    register-with-eureka: false
+#    service-url:
+#      defaultZone: https://optux.herokuapp.com/eureka/
+#  password: ${EUREKA_USER_PASSWORD:password}
 spring:
   application:
-    name: optuxEureka
+    name: eurekaserver
 
 server:
-  port: ${PORT:80}
-
-security:
-  user:
-    password: ${eureka.password}
+  port: 443
 
 eureka:
-  instance:
-    hostname: optux.herokuapp.com
   client:
-    fetch-registry: false
-    register-with-eureka: false
-    service-url:
-      defaultZone: https://optux.herokuapp.com/eureka/
-  password: ${EUREKA_USER_PASSWORD:password}
-
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:443/eureka
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
