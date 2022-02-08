@@ -13,23 +13,24 @@
 #    service-url:
 #      defaultZone: https://optux.herokuapp.com/eureka/
 #  password: ${EUREKA_USER_PASSWORD:password}
-
 server:
   port: ${$PORT:443}
 security:
   user:
     password: ${eureka.password:password}
 
-#spring:
-#  application:
-#    name: eurekaserver
+spring:
+  application:
+    name: eurekaserver
 
 eureka:
+  instance:
+    prefer-ip-address: false
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname:localhost}:${server.port:80}/eureka/
   password: ${EUREKA_USER_PASSWORD:password}
  # server:
- #   waitTimeInMsWhenSyncEmpty: 0
+ #   waitTimeInMsWhenSyncEmpty: 0 https://calendar.google.com/calendar/u/0?cid=ZW1tYWNlZGlsbG9AaG90bWFpbC5jb20
